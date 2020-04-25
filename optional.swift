@@ -22,3 +22,24 @@ if let unwrappedBMI = bmi {
 } else {
     print("0.00")
 }
+
+
+/*
+struct has cool feature it's adds ".?" for properties
+so in case we are creating variable people as following
+ */
+
+struct someParameters {
+    var name: String
+    var age: Int
+}
+
+struct info_for_person {
+    var people: someParameters?
+    
+    func print_info() {
+        print(people?.name ?? "No name defined")
+    }
+    
+}
+
