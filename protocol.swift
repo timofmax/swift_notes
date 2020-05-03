@@ -50,3 +50,18 @@ class seagul: Bird, canFly {
 let JonatanLevingston = seagul()
 JonatanLevingston.fly()
 
+/*
+ Most interesting thing that requirement defined by protocol
+ can be used in defining data type
+ in struct flyingStaff attribute actionFly set to canFly protocol
+ so, in using method flyingMovements in struct actionFly it's will be mandatory
+ 
+ */
+
+
+
+struct flyingStaff {
+    func flyingMovements(actionFly: canFly) {
+        actionFly.fly()
+    }
+}
