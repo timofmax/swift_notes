@@ -37,3 +37,9 @@ print(res)
 let res2 = calculator(n1: 32, n2: 24) {$0 * $1 }
 print(res)
 
+
+//Awesome closure use
+let array = [1,2,3,4,5,6]
+
+var s = array.map() {$0 + 1}
+print(s)
